@@ -26,7 +26,6 @@ let guesses = [];
 const wordDisplay = document.querySelector('.word');
 const triesDisplay = document.querySelector('.tries');
 const guessesDisplay = document.querySelector('.guesses');
-const hangmanParts = document.querySelectorAll('.body p');
 // Function to initialize a new hangman game
 const startNewGame = async () => {
     try {
@@ -60,10 +59,6 @@ const updateDisplay = () => {
     wordDisplay.textContent = updatedDisplay.trim();
     triesDisplay.textContent = tries;
     guessesDisplay.textContent = guesses.join(' ');
-    // Update hangman display based on remaining tries
-    hangmanParts.forEach((part, index) => {
-        part.style.visibility = index < (7 - tries) ? 'visible' : 'hidden';
-    });
 };
 // Function to check if the player has won
 const checkWin = () => !wordDisplay.textContent.includes('_');
