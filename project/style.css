@@ -1,0 +1,33 @@
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr fr 1fr;
+    font-size: xx-large;
+}
+#part{
+    margin:0;
+}
+.head{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.armr{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.torso{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.arml{
+    grid-column: 3/6;
+    grid-row: 2/3;
+}
+.legr{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.legl{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
